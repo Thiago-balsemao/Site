@@ -1,0 +1,82 @@
+header {
+  position: sticky; /* Fixa o header na janela */
+  left: 0; /* Alinha o header à esquerda */
+  width: 100%; /* Faz o header ocupar toda a largura da janela */
+  background-color: white; /* Fundo para evitar transparência */
+  transition: top 0.3s ease-in-out; /* Transição suave ao acompanhar o scroll */
+}
+
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative; /* Necessário para centralização relativa das setas */
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.3s ease-in-out; /* Transição suave */
+}
+
+.slide {
+  flex-shrink: 0;
+  width: 25%; /* Exibe 4 slides por vez */
+  position: relative;
+}
+
+.slide-content {
+  position: relative;
+  width: 100%;
+  height: 250px; /* Altura ajustada */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Mantém a proporção da imagem e preenche o contêiner */
+}
+
+.slide-overlay {
+  position: absolute; /* Posiciona o texto sobre a imagem */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Botões de navegação */
+.arrow-btn {
+  position: absolute;
+  top: 50%; /* Centraliza verticalmente em relação ao carousel-container */
+  transform: translateY(-50%); /* Ajusta o centro exato */
+  font-size: 2rem; /* Tamanho da seta */
+  color: #2563eb; /* Cor da seta */
+  background: transparent; /* Fundo transparente */
+  border: none; /* Remove bordas */
+  cursor: pointer; /* Cursor de ponteiro */
+  z-index: 10; /* Sobrepõe os slides */
+  transition: color 0.3s ease; /* Suaviza a mudança de cor */
+}
+
+.arrow-btn:hover {
+  color: #1e40af; /* Cor mais escura no hover */
+}
+
+.arrow-left {
+  left: 10px; /* Posiciona a seta esquerda alinhada à margem */
+}
+
+.arrow-right {
+  right: 10px; /* Posiciona a seta direita alinhada à margem */
+}
+
+/* Removido código redundante substituído por Tailwind */
+.text-shadow-md {
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Loja de fornecedores com produtos confiáveis e categorias diversas." />
+    <meta name="keywords" content="loja, fornecedores, produtos confiáveis, categorias, orgânicos, artesanato" />
+    <meta name="author" content="Thiago Balsemao" />
+    <meta name="robots" content="index, follow" />
+    <title>Loja de Fornecedores - Produtos Confiáveis</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      if (!window.tailwind) {
+        const link = document.createElement("link");
+        link.rel = "stylesheet";
+        link.href = "tailwind.css"; /* Arquivo local como fallback */
+        document.head.appendChild(link);
+      }
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="bg-gray-50 text-gray-800">
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 left-0 w-full z-50">
+      <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+        <h1 class="text-2xl font-bold text-blue-600">Minha Loja</h1>
+        <nav>
+          <ul class="flex gap-6 text-sm">
+            <li><a href="#" class="hover:text-blue-600">Início</a></li>
+            <li><a href="#" class="hover:text-blue-600">Produtos</a></li>
+            <li><a href="login/login.html" class="hover:text-blue-600">Login</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="bg-blue-100 py-10">
+      <div class="max-w-6xl mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold text-blue-700 mb-2">
+          Produtos de Fornecedores Confiáveis
+        </h2>
+        <p class="text-gray-600">Encontre os melhores itens direto da fonte.</p>
+      </div>
+    </section>
+
+    <!-- Categorias (Carrossel) -->
+    <main class="w-full py-6 relative">
+      <h3 class="text-xl font-semibold mb-6 px-4">Categorias</h3>
+
+      <!-- Carrossel -->
+      <div class="w-full overflow-hidden relative carousel-container">
+        <div class="carousel-inner flex transition-transform duration-300">
+          <!-- Categorias -->
+          <div class="flex-shrink-0 w-1/4 relative">
+            <div class="relative w-full h-64 overflow-hidden flex items-center justify-center">
+              <img
+                src="img/carne-vermelha.jpg"
+                alt="Categoria Carne Vermelha"
+                class="w-full h-full object-cover"
+                loading="lazy"
+              />
+              <p class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-lg font-bold text-shadow-md">
+                Carne Vermelha
+              </p>
+            </div>
+          </div>
+          <div class="flex-shrink-0 w-1/4 relative">
+            <div class="relative w-full h-64 overflow-hidden flex items-center justify-center">
+              <img
+                src="img/sementes-crioulas.jpg"
+                alt="Categoria Sementes Crioulas"
+                class="w-full h-full object-cover"
+                loading="lazy"
+              />
+              <p class="absolute inset-0 flex items-center justify-center text-white text-lg font-bold text-shadow-md">
+                Sementes Crioulas
+              </p>
+            </div>
+          </div>
+          <div class="flex-shrink-0 w-1/4 relative">
+            <div class="relative w-full h-64 overflow-hidden flex items-center justify-center">
+              <img
+                src="img/artesanais.webp"
+                alt="Categoria Artesanato"
+                class="w-full h-full object-cover"
+                loading="lazy"
+              />
+              <p class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-lg font-bold text-shadow-md">
+                Artesanato
+              </p>
+            </div>
+          </div>
+          <div class="flex-shrink-0 w-1/4 relative">
+            <div class="relative w-full h-64 overflow-hidden flex items-center justify-center">
+              <img
+                src="img/organicos.png"
+                alt="Categoria Orgânicos"
+                class="w-full h-full object-cover"
+                loading="lazy"
+              />
+              <p class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-lg font-bold text-shadow-md">
+                Orgânicos
+              </p>
+            </div>
+          </div>
+          <div class="flex-shrink-0 w-1/4 relative">
+            <div class="relative w-full h-64 overflow-hidden flex items-center justify-center">
+              <img
+                src="img/camarao.jpg"
+                alt="Categoria Camarões"
+                class="w-full h-full object-cover"
+                loading="lazy"
+              />
+              <p class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-lg font-bold text-shadow-md">
+                Camarões
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Botões de navegação -->
+        <button
+          class="arrow-left absolute top-1/2 left-2 transform -translate-y-1/2 text-2xl text-blue-600 hover:text-blue-800 bg-transparent border-none cursor-pointer z-10"
+          aria-label="Anterior"
+        >
+          ←
+        </button>
+        <button
+          class="arrow-right absolute top-1/2 right-2 transform -translate-y-1/2 text-2xl text-blue-600 hover:text-blue-800 bg-transparent border-none cursor-pointer z-10"
+          aria-label="Próximo"
+        >
+          →
+        </button>
+      </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="bg-white border-t mt-10">
+      <div class="max-w-6xl mx-auto px-4 py-6 text-sm text-gray-500 flex justify-between items-center">
+        <span>© 2025 Minha Loja</span>
+        <span>Desenvolvido por Você</span>
+      </div>
+    </footer>
+
+    <!-- Inclusão dos scripts -->
+    <script src="script.js"></script>
+  </body>
+</html>
